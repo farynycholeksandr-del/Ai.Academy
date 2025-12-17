@@ -67,7 +67,11 @@ body {
 }
 
 a {
+<<<<<<< HEAD
     color: var(--color-text);
+=======
+    color: var(--color-primary);
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -190,7 +194,11 @@ header {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
+<<<<<<< HEAD
     color: var(--color-text);
+=======
+    color: var(--color-primary);
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
     display: flex;
     align-items: center;
 }
@@ -310,11 +318,14 @@ header {
     max-width: 800px;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 .hero-content-inner h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: var(--color-text);
 }
+=======
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
 
 .hero-badge {
     display: inline-flex;
@@ -351,6 +362,7 @@ header {
 }
 
 .section-padding {
+<<<<<<< HEAD
     padding: 60px 0;
     background-color: var(--color-section-background);
 }
@@ -364,6 +376,16 @@ header {
     font-size: 2em; 
     text-align: center;
     color: var(--color-text); 
+=======
+    padding: 80px 0;
+    background-color: var(--color-section-background);
+}
+
+.section-title {
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--color-primary);
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
     margin-bottom: 10px;
 }
 
@@ -410,11 +432,15 @@ header {
 .info-card {
     text-align: center;
 }
+<<<<<<< HEAD
 .info-card h3 {
     color: var(--color-text);
     margin-bottom: 10px;
     font-size: 1.1em;
 }
+=======
+
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
 .card-icon-wrapper, .course-icon-wrapper {
     width: 50px;
     height: 50px;
@@ -474,8 +500,13 @@ header {
 }
 
 .course-card h4 {
+<<<<<<< HEAD
     color: var(--color-text);
     font-size: 1.3em;
+=======
+    font-size: 1.5em;
+    color: var(--color-primary);
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
     margin-bottom: 10px;
 }
 
@@ -500,6 +531,7 @@ header {
 }
 
 [data-theme="dark"] .detail-icon {
+<<<<<<< HEAD
     filter: invert(0.6);
 }
 
@@ -513,6 +545,9 @@ header {
 
 [data-theme="dark"] .icon-assele {
     filter: invert(45%) sepia(35%) saturate(1633%) hue-rotate(226deg) brightness(0.97);
+=======
+     filter: invert(0.6);
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
 }
 
 .card-actions {
@@ -533,7 +568,10 @@ header {
 }
 
 footer {
+<<<<<<< HEAD
     margin-top: 40px;
+=======
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
     background-color: var(--color-background);
     padding: 40px 0 0;
     border-top: 1px solid var(--color-border);
@@ -547,9 +585,15 @@ footer {
 }
 
 .footer-block h5 {
+<<<<<<< HEAD
     font-size: 1.1em;
     margin-bottom: 15px;
     color: var(--color-text);
+=======
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: var(--color-primary);
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
 }
 
 .footer-block ul {
@@ -639,7 +683,11 @@ footer {
 
 .tab-btn.active {
     background-color: var(--color-card-background); 
+<<<<<<< HEAD
     color: var(--color-text);
+=======
+    color: var(--color-primary);
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
     box-shadow: 0 1px 3px var(--color-shadow);
 }
 
@@ -655,7 +703,11 @@ footer {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+<<<<<<< HEAD
     color: var(--color-text);
+=======
+    color: var(--color-primary);
+>>>>>>> 83ea92f37fd36f96dcf5f42c65f1042db8047dd2
 }
 
 .auth-form input[type="email"],
