@@ -719,3 +719,356 @@ footer {
         gap: 15px;
     }
 }
+/* --- СТОРІНКА КОНТАКТІВ: ПОВНИЙ АДАПТИВНИЙ КОД --- */
+
+/* Фон на всю ширину (як на інших сторінках) */
+.contact-page-bg {
+    background-color: var(--color-section-background);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contact-hero {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+.contact-hero .section-title {
+    color: var(--color-text);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* СІТКА (GRID) - відновлено проміжок gap */
+.contact-main-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px !important; /* Проміжок між двома колонками */
+    align-items: stretch;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+/* Заголовки */
+.column-title,
+.info-text h4 {
+    color: var(--color-text) !important;
+    margin-bottom: 10px;
+}
+
+.column-subtitle {
+    color: var(--color-text-secondary);
+    margin-bottom: 30px;
+    display: block;
+}
+
+/* СПИСОК КАРТОК (Ліва колонка) */
+.info-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Проміжок МІЖ картками контактів */
+}
+
+.info-item-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background-color: var(--color-card-background);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    transition: transform 0.3s ease;
+}
+
+.info-item-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Акцентна картка */
+.info-item-card.info-card-accent {
+    background-color: rgba(176, 94, 148, 0.15);
+    box-shadow: none;
+    border: 1px solid rgba(176, 94, 148, 0.3);
+}
+
+.icon-box-pink {
+    width: 54px;
+    height: 54px;
+    background-color: rgba(176, 94, 148, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.pink-icon {
+    width: 28px;
+    height: 28px;
+    filter: invert(47%) sepia(18%) saturate(1455%) hue-rotate(278deg) brightness(91%) contrast(85%);
+}
+
+.info-text a, 
+.info-text p {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* ФОРМА (Права колонка) */
+.contact-form-column.card {
+    background-color: var(--color-card-background);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+.contact-form-column .form-group {
+    margin-bottom: 20px; /* Проміжок між полями вводу */
+    width: 100%;
+}
+
+.contact-form-column label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--color-text) !important;
+}
+
+.contact-form-column input, 
+.contact-form-column textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-input-background);
+    border: 1px solid var(--color-input-border);
+    border-radius: 10px;
+    font-family: inherit;
+    color: var(--color-text);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.contact-form-column input:focus, 
+.contact-form-column textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    background-color: var(--color-card-background);
+}
+
+/* Відновлення іконки Send та стилів кнопки */
+.btn-send {
+    background-color: var(--color-accent);
+    color: #ffffff !important; /* Текст завжди білий */
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; /* Проміжок між іконкою та текстом */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-send:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--color-shadow-hover);
+}
+
+.send-icon {
+    width: 20px; /* Фіксований розмір іконки */
+    height: 20px;
+    object-fit: contain;
+    /* Робимо чорну іконку білою */
+    filter: brightness(0) invert(1); 
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+/* Мобільна адаптація */
+@media (max-width: 992px) {
+    .contact-main-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+}
+
+/* --- МОДАЛЬНЕ ВІКНО (ПІДНЯТЕ ВИЩЕ) --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: var(--color-card-background);
+    /* Змінюємо 10% на 5%, щоб підняти вікно вище */
+    margin: 5% auto; 
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: var(--color-text);
+}
+
+/* Виправлення іконки send у кнопці (якщо злетіла) */
+.btn-accent-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--color-cta-background-start), var(--color-cta-background-end));
+    color: white;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.send-icon {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1); /* Робить іконку білою */
+    object-fit: contain;
+}
+
+/* Стилі для вкладок модалки */
+.tab-switch {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    background-color: var(--color-section-background);
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-text-secondary);
+    border-radius: 8px;
+}
+
+.tab-btn.active {
+    background-color: var(--color-card-background);
+    color: var(--color-primary);
+}
+
+
+/* Форми всередині модалки */
+.auth-form {
+    display: none;
+}
+
+.auth-form.active-form {
+    display: block;
+}
+
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    color: var(--color-text) !important;
+    margin-bottom: 8px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--color-input-background);
+    border: 1px solid var(--color-input-border);
+    border-radius: 10px;
+    color: var(--color-text);
+}
+
+.btn-accent-full {
+    background: linear-gradient(135deg, var(--color-cta-background-start), var(--color-cta-background-end));
+    color: white;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-accent-full:hover {
+    transform: scale(1.02);
+}
+
+/* --- СЕКЦІЯ FAQ --- */
+.faq-section {
+    margin-top: 80px; /* Відступ від основної сітки контактів */
+    padding-bottom: 80px;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Такий же проміжок, як між картками контактів */
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Стилізація карток FAQ (ідентично до контактів, але без іконок) */
+.faq-card {
+    width: 100%;
+    box-sizing: border-box;
+    cursor: default; /* Прибираємо вказівник, якщо картка не клікабельна */
+}
+
+.faq-card .info-text {
+    width: 100%;
+}
+
+.faq-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--color-text) !important;
+}
+
+.faq-card p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Адаптивність для малих екранів */
+@media (max-width: 992px) {
+    .faq-section {
+        margin-top: 50px;
+    }
+}

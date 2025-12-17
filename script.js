@@ -94,4 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Реєстрація виконана! (Демо-режим)');
         closeModal();
     });
+    // Знаходимо всі кнопки "Записатись"
+    const enrollButtons = document.querySelectorAll('.open-auth-btn');
+
+// Додаємо кожній кнопці подію відкриття модального вікна
+    enrollButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Викликаємо функцію відкриття, яка вже є у вашому скрипті
+        openModal('login'); 
+    });
+});
 });
