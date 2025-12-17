@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Academy - Навчайся майбутньому вже сьогодні</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon-wrapper"><img src="assets/star.png" alt="AI Academy Logo" class="logo-icon"></div>
+                AI Academy
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="courses.html">Курси</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Перемкнути тему" class="icon-button">
+                    <img id="theme-icon-img" src="assets/half-moon.png" alt="Toggle Theme" class="theme-icon">
+                </button>
+                <button id="login-register-btn" class="btn btn-primary">Вхід / Реєстрація</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+             <div class="hero-background-image"></div> 
+            <div class="hero-content-inner">
+                <div class="hero-badge">
+                    <img src="assets/star.png" alt="Star Icon" class="icon-star">
+                    Навчайся майбутньому вже сьогодні
+                </div>
+                <h1>Опануй штучний інтелект разом з AI Academy</h1>
+                <p>
+                    Навчіться ефективно використовувати AI-інструменти для дизайну, програмування та автоматизації робочих процесів. Від базових концепцій до професійної інтеграції.
+                </p>
+                <div class="hero-actions">
+                    <a href="courses.html" class="btn btn-accent">Переглянути курси &rarr;</a>
+                    <button class="btn btn-secondary-outline">Зв'язатися з нами</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantages-and-courses" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Чому обирають нас</h2>
+            <p class="section-subtitle">Ми надаємо найкращі умови для навчання</p>
+            <div class="card-grid advantages-grid">
+                <div class="info-card">
+                    <div class="card-icon-wrapper star">
+                        <img src="assets/star.png" alt="Star Icon" class="card-icon">
+                    </div>
+                    <h3>Актуальні знання</h3>
+                    <p>Навчальні матеріали оновлюються щомісяця відповідно до нових технологій</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon-wrapper flash">
+                        <img src="assets/flash.png" alt="Flash Icon" class="card-icon">
+                    </div>
+                    <h3>Практичний підхід</h3>
+                    <p>Реальні кейси та завдання для закріплення навичок</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon-wrapper award">
+                        <img src="assets/award.png" alt="Award Icon" class="card-icon">
+                    </div>
+                    <h3>Сертифікат</h3>
+                    <p>Офіційний сертифікат після успішного завершення курсу</p>
+                </div>
+            </div>
+
+            <div class="all-courses-action">
+                <button class="btn btn-primary-filled">Переглянути всі курси</button>
+            </div>
+            
+            <h2 class="section-title courses-title" id="courses">Наші курси</h2>
+            <p class="section-subtitle">Оберіть курс, який відповідає вашому рівню підготовки</p>
+
+            <div class="card-grid courses-grid">
+                <div class="course-card">
+                    <div class="card-header">
+                        <div class="course-icon-wrapper brain">
+                            <img src="assets/brain.png" alt="Brain Icon" class="course-icon course-icon-dark">
+                        </div>
+                        <span class="course-level">Початковий</span>
+                    </div>
+                    <h4>Вступ до ШІ</h4>
+                    <p class="course-description">Дізнайтесь про переваги та недоліки штучного інтелекту, його можливості і обмеження.</p>
+                    <ul class="course-details">
+                        <li><img src="assets/clock.png" alt="Clock Icon" class="detail-icon"> 4 тижні</li>
+                        <li><img src="assets/user.png" alt="User Icon" class="detail-icon"> 2847 студентів</li>
+                        <li><img src="assets/open-book.png" alt="Book Icon" class="detail-icon"> Онлайн формат</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a href="courses.html#courses-catalog.info" class="btn btn-outline">Детальніше</a>
+                        <a href="courses.html" class="btn btn-accent">Записатись</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="card-header">
+                        <div class="course-icon-wrapper light-bulb">
+                            <img src="assets/light-bulb.png" alt="Light Bulb Icon" class="course-icon course-icon-dark">
+                        </div>
+                        <span class="course-level">Середній</span>
+                    </div>
+                    <h4>Логіка ШІ</h4>
+                    <p class="course-description">Поглиблене вивчення логіки роботи ШІ, промт-інженерії та оптимізації запитів.</p>
+                    <ul class="course-details">
+                        <li><img src="assets/clock.png" alt="Clock Icon" class="detail-icon"> 6 тижнів</li>
+                        <li><img src="assets/user.png" alt="User Icon" class="detail-icon"> 1523 студентів</li>
+                        <li><img src="assets/open-book.png" alt="Book Icon" class="detail-icon"> Онлайн формат</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a href="courses.html#courses-catalog.info" class="btn btn-outline">Детальніше</a>
+                        <a href="courses.html" class="btn btn-accent">Записатись</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="card-header">
+                        <div class="course-icon-wrapper coding">
+                            <img src="assets/coding.png" alt="Coding Icon" class="course-icon course-icon-dark">
+                        </div>
+                        <span class="course-level">Просунутий</span>
+                    </div>
+                    <h4>Інтеграція ШІ</h4>
+                    <p class="course-description">Практичне використання інтегрованого ШІ в програмах та робочих процесах.</p>
+                    <ul class="course-details">
+                        <li><img src="assets/clock.png" alt="Clock Icon" class="detail-icon"> 8 тижнів</li>
+                        <li><img src="assets/user.png" alt="User Icon" class="detail-icon"> 986 студентів</li>
+                        <li><img src="assets/open-book.png" alt="Book Icon" class="detail-icon"> Онлайн формат</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a href="courses.html#courses-catalog.info" class="btn btn-outline">Детальніше</a>
+                        <a href="courses.html" class="btn btn-accent">Записатись</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding">
+        <div class="container cta-content">
+            <h2>Готові почати навчання?</h2>
+            <p>Приєднуйтесь до тисяч студентів, які вже опановують ШІ!</p>
+            <button class="btn btn-cta">Обрати курс</button>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-block about-block">
+                <div class="logo">
+                    <div class="logo-icon-wrapper"><img src="assets/star.png" alt="AI Academy Logo" class="logo-icon"></div>
+                    AI Academy
+                </div>
+                <p>Навчаємо ефективно використовувати штучний інтелект для вирішення реальних задач.</p>
+            </div>
+            <div class="footer-block">
+                <h5>Швидкі посилання</h5>
+                <ul>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#courses">Курси</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h5>Наші курси</h5>
+                <ul>
+                    <li><a href="#">Вступ до ШІ</a></li>
+                    <li><a href="#">Логіка ШІ</a></li>
+                    <li><a href="#">Інтеграція ШІ</a></li>
+                </ul>
+            </div>
+            <div class="footer-block contact-info">
+                <h5>Контакти</h5>
+                <ul>
+                    <li><a href="mailto:info@aiacademy.ua">info@aiacademy.ua</a></li>
+                    <li><a href="tel:+380123456789">+380 12 345 67 89</a></li>
+                    <li><a href="www.google.com/maps?sca_esv=879ee82fb3684b4c&rlz=1C5CHFA_enUA1062UA1062&output=search&q=ужгород&source=lnms&fbs=AIIjpHxnHsKkeP6N86RxPGa-6HAvyZVLviwGkKyWEL5Ft571dga0aFdH7HWmXCzkoCcDzwDxA7PGs1IKS52j2NIfzSfCAlfDx6UyiQb9kLd30zvpDRmPPM6E2f-WDpru4UGoM-q01qIfepLNNFI9nMtmYSuqpSyNn38RJ6e8T4aUM4hE2fP0jXLJdZbafQDazXQ4PqnOuRk_iRK_pd7FNzU3SaaXFWmlEIav2RfGSvRJKHc1fz-5DcRjzSF6W0aJhxwKR77L0_O92xLgKB2LE7CjU8Hx-4jlTw&entry=mc&ved=1t:200715&ictx=111">Ужгород, Україна</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AI Academy. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Вітаємо в AI Academy</h2>
+            <p>Увійдіть або створіть акаунт, щоб почати навчання</p>
+
+            <div class="tab-switch">
+                <button id="tab-login" class="tab-btn active">Вхід</button>
+                <button id="tab-register" class="tab-btn">Реєстрація</button>
+            </div>
+
+            <form id="login-form" class="auth-form active-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-accent-full">Увійти</button>
+            </form>
+
+            <form id="register-form" class="auth-form">
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Пароль</label>
+                    <input type="password" id="register-password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-accent-full">Зареєструватись</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
